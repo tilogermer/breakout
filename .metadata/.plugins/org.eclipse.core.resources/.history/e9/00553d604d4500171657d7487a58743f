@@ -6,7 +6,9 @@ import de.hpi.javaide.breakout.starter.Game;
 
 public class Timer extends UIObject {
 
-	//30.05.17 rewritten from breakout22
+	public static final String RESET = "reset";
+	
+	//30.05.17 new from breakout22
 	private int seconds;
 	private boolean timeOver = false;
 	private boolean isPaused = false;
@@ -22,15 +24,18 @@ public class Timer extends UIObject {
 	public void display() {
 		game.fill(255);
 		game.textFont(Font.getFont16());
-		game.text("speed up in: " + seconds, game.width-150, game.height-80);
+		game.text("Time left: " + seconds, game.width-150, game.height-80);
 	}
 
 	@Override
 	public void update(String input) {
-		seconds = 60 - (game.millis() - startTime) / 1000;
+		
+		seconds = 60 - (game.millis() - startTime)/1000;
 		if (seconds <=1){
+			
 			timeOver = true;
 		}
+			
 	}		
 	public void start(){
 		timeOver = false;
