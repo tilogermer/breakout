@@ -7,7 +7,7 @@ import de.hpi.javaide.breakout.starter.Game;
 public class Score extends UIObject {
 	
 	/**
-	 * score of the game
+	 * stores the running score for the current game session
 	 */
 	private int score;
 	
@@ -15,19 +15,33 @@ public class Score extends UIObject {
 		super(game);
 		score = 0;
 	}
-
+	/**
+	 * refers to methods provided by Processing to set the font family, font size, text color
+	 * and to display the current score on the screen
+	 */
 	@Override
 	public void display() {
 		
 		game.fill(255);
-		game.textFont(Font.getFont16());
-		game.text("Score: " + score,  game.width-150, game.height-100);
+		game.textFont(Font.getFont24());
+		game.textSize(18);
+		game.text("Score: " + score,  game.width-120, game.height-100);
 	}
-
+	
+	/**
+	 * increments the running score by the amount specified as argument
+	 * since this method is inherited from UI-Object which requires an argument of type String
+	 * an explicit conversion is necessary.
+	 * 
+	 */
 	@Override
 	public void update(String input) {
-		// TODO cumulated highscore after 3 balls when the game is finished
-		score += Integer.parseInt(input);
+		// convert input String to int
+		int points = Integer.parseInt(input);
+		score += points;
 		
+	}
+	public int getScore(){
+		return score;
 	}
 }
