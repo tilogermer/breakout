@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.2-dev-20160306-90c514b" sequence="1" timestamp="1495629525943" analysisTimestamp="1495629521210" release="">
+  <Project projectName="BreakoutGame">
+    <Jar>/Users/Tilo/Documents/hpi-breakout44/BreakoutGame/bin/de/hpi/javaide/breakout/starter/Main.class</Jar>
+    <AuxClasspathEntry>/Users/Tilo/Documents/hpi-breakout44/BreakoutGame/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/Tilo/Documents/hpi_breakout1/core.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/Tilo/Documents/hpi-breakout44/BreakoutGame/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 24 May 2017 14:33:22 +0200" total_classes="1" referenced_classes="11" total_bugs="0" total_size="6" num_packages="1" java_version="1.8.0_111" vm_version="25.111-b14" cpu_seconds="11.62" clock_seconds="4.93" peak_mbytes="503.21" alloc_mbytes="1024.00" gc_seconds="0.05">
+    <PackageStats package="de.hpi.javaide.breakout.starter" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="de.hpi.javaide.breakout.starter.Main" sourceFile="Main.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="2224" invocations="2" avgMicrosecondsPerInvocation="1112296" maxMicrosecondsPerInvocation="1208026" standardDeviationMircosecondsPerInvocation="95724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="571" invocations="441" avgMicrosecondsPerInvocation="1295" maxMicrosecondsPerInvocation="108114" standardDeviationMircosecondsPerInvocation="5823"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="266" invocations="11" avgMicrosecondsPerInvocation="24215" maxMicrosecondsPerInvocation="138509" standardDeviationMircosecondsPerInvocation="42928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="122" invocations="441" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="40637" standardDeviationMircosecondsPerInvocation="2526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="113" invocations="123" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="18712" standardDeviationMircosecondsPerInvocation="2115"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1495629525898" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
