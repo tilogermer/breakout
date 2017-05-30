@@ -28,16 +28,14 @@ public class Info extends UIObject {
 	@Override
 	public void display() {
 	    game.textFont(Font.getFont24());
-	    game.textSize(30);
-	    game.fill(150,200, 250);
-	    game.text(content, 150, 200);
+	    game.text(content, game.width/2, game.height/2);
 
 	}
 
 	@Override
 	public void update(String input) {
 		
-		this.content = input;
+		content = input;
 		
 	}
 }
